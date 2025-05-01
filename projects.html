@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Projects</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h2 class="logo">Portfolio<span>.</span></h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="projects">
+    <h1>My Projects</h1>
+
+    <div class="project-list">
+      <!-- Event Management System -->
+      <div class="project">
+        <div class="project-details">
+          <h3>Event Management System <span class="toggle-icon">▼</span></h3>
+          <p>
+            Developed a dynamic web platform for creating and managing events based on type, location, and budget. Includes user authentication, booking, reviews, and user history. Real-time data handled through a robust backend database.
+          </p>
+          <a href="https://github.com/Paromita22/Event-Management-System" target="_blank" class="btn">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- Shopping Management System -->
+      <div class="project">
+        <div class="project-details">
+          <h3>Stock-and-Billing-System <span class="toggle-icon">▼</span></h3>
+          <p>
+            Console-based system using OOP and file handling in C++. Allows admins to manage inventory and users to shop with receipt generation. Ensures persistent data through text-based storage.
+          </p>
+          <a href="https://github.com/Paromita22/Stock-and-Billing-System" target="_blank" class="btn">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- Automated Water Level Controller -->
+      <div class="project">
+        <div class="project-details">
+          <h3>Automated Water Level Controller <span class="toggle-icon">▼</span></h3>
+          <p>
+            Built using IC555 timers to automate motor control for household tanks. Prevents overflow and dry runs, reducing manual work by 90%.
+          </p>
+          <a href="https://github.com/Paromita22/Automated-Water-Level-Controller" target="_blank" class="btn">View on GitHub</a>
+        </div>
+      </div>
+  
+      <!-- Footstep Power Generator -->
+      <div class="project">
+        <div class="project-details">
+          <h3 >Footstep Power Generator <span class="toggle-icon">▼</span></h3>
+          <p>
+            Designed a piezoelectric-based prototype that generates electricity from footsteps, demonstrated by lighting LEDs. Explores potential for energy harvesting in public spaces.
+          </p>
+          <a href="https://github.com/yourusername/footstep-power-generator" target="_blank" class="btn">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Script for toggle effect -->
+  <script>
+    document.querySelectorAll('.project').forEach(card => {
+      card.querySelector('.toggle-icon').addEventListener('click', () => {
+        card.classList.toggle('expanded');
+      });
+    });
+  </script>
+</body>
+</html>
+
+

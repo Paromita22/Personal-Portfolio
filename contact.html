@@ -1,61 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact</title>
-  <link rel="stylesheet" href="style.css"/>
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
-  <header>
-    <h2 class="logo">Portfolio<span>.</span></h2>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="skills.html">Skills</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h2 class="logo">Portfolio<span>.</span></h2>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </header>
 
-  <section class="contact">
-    <h1>Contact Me</h1>
-    <p>Feel free to reach out to me!</p>
+    <section class="contact-modern">
+      <h1
+        style="
+          color: #ce23fe;
+          text-align: center;
+          font-size: 42px;
+          margin-bottom: 40px;
+          animation: fadeInUp 1s ease;
+        "
+      >
+        Get In Touch
+      </h1>
 
-    <!-- Contact Information -->
-    <div class="contact-info">
+      <div class="contact-box">
+        <!-- Left Side: Contact Information -->
+        <div class="contact-info-panel">
+          <h3 style="color: #00f2ff; font-size: 28px; margin-bottom: 15px">
+            Let's Talk
+          </h3>
+          <p
+            style="
+              color: #ccc;
+              margin-bottom: 30px;
+              font-size: 16px;
+              line-height: 1.6;
+            "
+          >
+            I'm currently looking for new opportunities and collaborations.
+            Whether you have a question, a project idea, or just want to say hi,
+            feel free to drop a message!
+          </p>
+
+          <div class="info-item-modern">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Mirpur, Dhaka, Bangladesh</span>
+          </div>
+          <div class="info-item-modern">
+            <i class="fas fa-phone-alt"></i>
+            <span>+8801306537077</span>
+          </div>
+          <div class="info-item-modern">
+            <i class="fas fa-envelope"></i>
+            <span>paromitachanda03@gmail.com</span>
+          </div>
+
+          <div
+            class="social-icons2"
+            style="justify-content: flex-start; margin-top: 40px"
+          >
+            <a
+              href="https://www.facebook.com/share/1Bh2TRSA1r/?mibextid=qi2Omg"
+              target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/__paroomitaa__?igsh=MWxjNjQ3bGIxMGIy"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://github.com/Paromita22" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/paromita-chanda"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Right Side: Contact Form -->
+        <div class="contact-form-panel">
+          <!-- Replaced mailto with Web3Forms -->
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <!-- Replace this value with the Access Key you get in your email -->
+            <input
+              type="hidden"
+              name="access_key"
+              value="c4dd8064-e218-48db-861c-760840c8a5a2"
+            />
+
+            <div class="input-group">
+              <input type="text" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="input-group">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <input
+                type="text"
+                name="subject"
+                placeholder="Subject"
+                required
+              />
+            </div>
+            <div class="input-group">
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <!-- 
+            <input
+              type="hidden"
+              name="redirect"
+              value="https://yourwebsite.com/contact.html"
+            />
+Optional: Redirects them back to your site instead of a blank "success" page -->
+            <button type="submit" class="btn-modern-submit">
+              Send Message
+              <i class="fas fa-paper-plane" style="margin-left: 5px"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!--
+    <section class="contact">
+      <h1>Contact Me</h1>
+      <p>Feel free to reach out to me!</p>
+
+     
+      <div class="contact-info">
         <div class="info-item">
           <i class="fas fa-map-marker-alt"></i>
           <span>Mirpur, Dhaka, Bangladesh</span>
         </div>
         <div class="info-item">
           <i class="fas fa-envelope"></i>
-          <span>paromitachanda04@gmail.com</span>
+          <span>paromitachanda03@gmail.com</span>
         </div>
       </div>
-      
 
-    <!-- Social Icons -->
-    <div class="social-icons2">
-      <a href="https://www.facebook.com/share/1Bh2TRSA1r/?mibextid=qi2Omg" target="_blank">
-        <i class="fab fa-facebook"></i>
-      </a>
 
-      <a href="https://www.instagram.com/__paroomitaa__?igsh=MWxjNjQ3bGIxMGIy" target="_blank">
-        <i class="fab fa-instagram"></i>
-      </a>
+      <div class="social-icons2">
+        <a
+          href="https://www.facebook.com/share/1Bh2TRSA1r/?mibextid=qi2Omg"
+          target="_blank"
+        >
+          <i class="fab fa-facebook"></i>
+        </a>
 
-      <a href="https://github.com/Paromita22" target="_blank">
-        <i class="fab fa-github"></i>
-      </a>
+        <a
+          href="https://www.instagram.com/__paroomitaa__?igsh=MWxjNjQ3bGIxMGIy"
+          target="_blank"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
 
-      <a href="https://www.linkedin.com/in/paromita-chanda-37779a2a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-    </div>
-  </section>
-</body>
+        <a href="https://github.com/Paromita22" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/paromita-chanda-37779a2a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </section>
+    -->
+  </body>
 </html>
-

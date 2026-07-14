@@ -1,28 +1,146 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Projects</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-  <header>
-    <h2 class="logo">Portfolio<span>.</span></h2>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="skills.html">Skills</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Projects</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2 class="logo">Portfolio<span>.</span></h2>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-  <section class="projects">
+<section class="projects">
     <h1>My Projects</h1>
 
-    <div class="project-list">
+    <div class="project-grid">
+      
+      <!-- Featured Project: VLM (Takes full width on desktop) -->
+      <div class="project-card featured-project">
+        <p class="project-subtitle">Featured Research Project</p>
+        <h3>VLM-based ACL Tear Detection</h3>
+        <p class="project-desc">
+          Spearheaded a novel multimodal Vision-Language Model (VLM) framework to automate knee MRI analysis, achieving 86.00% accuracy and an 88.46% AUC on the benchmark Stanford MRNet dataset. Engineered a parameter-efficient fine-tuning pipeline utilizing LoRA and a custom Gated Attention Network to dynamically prioritize diagnostically relevant MRI slices without heavy GPU constraints. Developed a REST API and web dashboard to generate real-time clinical reports and Explainable AI (XAI) heatmaps.
+        </p>
+        <div class="tech-stack-tags">
+          <span class="tag">Python</span>
+          <span class="tag">BioMedCLIP</span>
+          <span class="tag">LoRA</span>
+          <span class="tag">PyTorch</span>
+          <span class="tag">Flask</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Paromita22" target="_blank" class="btn-modern">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Sohoj Sheba -->
+      <div class="project-card">
+        <h3>Sohoj Sheba (AI Assistant)</h3>
+        <p class="project-desc">
+          Built a high-performance native Android UI with MVVM architecture. Integrated Google Gemini AI to power a context-aware, bilingual chatbot with custom Markdown rendering. Configured a secure Firebase backend with strict Row-Level Security and enabled offline local caching via Room Database, achieving an app launch time under 2 seconds.
+        </p>
+        <div class="tech-stack-tags">
+          <span class="tag">Kotlin</span>
+          <span class="tag">Jetpack Compose</span>
+          <span class="tag">Firebase</span>
+          <span class="tag">Gemini AI</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Paromita22" target="_blank" class="btn-modern">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
       <!-- Event Management System -->
+      <div class="project-card">
+        <h3>Event Management System</h3>
+        <p class="project-desc">
+          Developed a dynamic web platform for event creation, booking, and filtering based on type, location, and budget. Enabled improved decision-making through past event tracking and user feedback, successfully processing 70+ transactions with zero data loss or corruption during local testing.
+        </p>
+        <div class="tech-stack-tags">
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">PHP</span>
+          <span class="tag">SQL</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Paromita22/Event-Management-System" target="_blank" class="btn-modern">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Stock and Billing System -->
+      <div class="project-card">
+        <h3>Stock & Billing System</h3>
+        <p class="project-desc">
+          Created a console-based inventory and billing system utilizing Object-Oriented Programming (OOP) principles and file handling in C++. Enabled seamless product management and automated receipt generation with 100% transaction accuracy.
+        </p>
+        <div class="tech-stack-tags">
+          <span class="tag">C++</span>
+          <span class="tag">OOP</span>
+          <span class="tag">File Handling</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Paromita22/Stock-and-Billing-System" target="_blank" class="btn-modern">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Burger Shop Billing System -->
+      <div class="project-card">
+        <h3>Burger Shop Billing System</h3>
+        <p class="project-desc">
+          Developed a GUI-based ordering application featuring real-time price calculation and customized order management. Successfully reduced manual billing efforts by 70% while implementing robust reset and clear functions for smoother operations.
+        </p>
+        <div class="tech-stack-tags">
+          <span class="tag">Java</span>
+          <span class="tag">Java Swing</span>
+          <span class="tag">GUI</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Paromita22" target="_blank" class="btn-modern">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Automated Water Level Controller -->
+      <div class="project-card">
+        <h3>Automated Water Level Controller</h3>
+        <p class="project-desc">
+          Designed an IC555 timer-based system to automate motor control for household water tanks, successfully preventing overflow and dry runs. Maintained 90% automation efficiency across varied water flow conditions.
+        </p>
+        <div class="tech-stack-tags">
+          <span class="tag">555 Timer IC</span>
+          <span class="tag">Sensors</span>
+          <span class="tag">Hardware</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Paromita22/Automated-Water-Level-Controller" target="_blank" class="btn-modern">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+      <!--
+    <div class="project-list">
+      
       <div class="project">
         <div class="project-details">
           <h3>Event Management System <span class="toggle-icon">▼</span></h3>
@@ -33,7 +151,7 @@
         </div>
       </div>
 
-      <!-- Shopping Management System -->
+     
       <div class="project">
         <div class="project-details">
           <h3>Stock-and-Billing-System <span class="toggle-icon">▼</span></h3>
@@ -44,7 +162,7 @@
         </div>
       </div>
 
-      <!-- Automated Water Level Controller -->
+      
       <div class="project">
         <div class="project-details">
           <h3>Automated Water Level Controller <span class="toggle-icon">▼</span></h3>
@@ -55,7 +173,7 @@
         </div>
       </div>
   
-      <!-- Footstep Power Generator -->
+  
       <div class="project">
         <div class="project-details">
           <h3 >Footstep Power Generator <span class="toggle-icon">▼</span></h3>
@@ -66,17 +184,15 @@
         </div>
       </div>
     </div>
-  </section>
+    --></section>
 
-  <!-- Script for toggle effect -->
-  <script>
-    document.querySelectorAll('.project').forEach(card => {
-      card.querySelector('.toggle-icon').addEventListener('click', () => {
-        card.classList.toggle('expanded');
+    <!-- Script for toggle effect -->
+    <script>
+      document.querySelectorAll(".project").forEach((card) => {
+        card.querySelector(".toggle-icon").addEventListener("click", () => {
+          card.classList.toggle("expanded");
+        });
       });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>
-
-

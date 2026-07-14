@@ -179,7 +179,7 @@ nav a.active {
   }
 }
 
-/* Responsive */
+/* 
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -204,7 +204,7 @@ nav a.active {
     font-size: 22px;
   }
 }
-
+*/
 /* Animation keyframes */
 @keyframes slideInLeft {
   from {
@@ -634,37 +634,36 @@ nav a.active {
 }
 */
 
-/* Responsive adjustments for Mobile & Tablets */
+/* 
 @media (max-width: 768px) {
-  /* Fix Header & Navigation */
+
   header {
     flex-direction: column;
-    align-items: center; /* Centers the logo */
-    padding: 20px; /* Reduces the large 40px padding */
-  }
+    align-items: center; 
+    padding: 20px; 
 
   nav {
-    margin-right: 0; /* Removes the 85px margin that squashes the menu */
+    margin-right: 0; 
     justify-content: center;
     gap: 15px;
     margin-top: 15px;
   }
 
   nav a {
-    font-size: 14px; /* Slightly smaller text for mobile menus */
+    font-size: 14px;
   }
 
-  /* Fix Home Section Margins */
+ 
   .home {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 40px 20px; /* Reduces the 80px horizontal padding */
+    padding: 40px 20px; 
     gap: 20px;
   }
 
   .content {
-    margin-left: 0; /* Removes the 30px left margin */
+    margin-left: 0; 
   }
 
   .content h1 {
@@ -681,18 +680,18 @@ nav a.active {
 
   .image-container {
     width: 250px;
-    margin-right: 0; /* Removes the 55px right margin */
-    margin-top: 20px; /* Adds breathing room between button and image */
+    margin-right: 0; 
+    margin-top: 20px; 
   }
 
-  /* Ensure social icons align properly on mobile */
+  
   .social-icons {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   }
 }
-
+*/
 /* ============================================
    NEW MODERN PROJECTS GRID LAYOUT
    ============================================ */
@@ -1345,4 +1344,96 @@ body.light-mode .social-icons2 a:hover {
 
   /* Glow color shifts to purple on hover */
   box-shadow: 0 0 35px rgba(206, 35, 248, 0.8);
+}
+
+/* Responsive adjustments for Mobile & Tablets */
+/* Responsive adjustments for Mobile & Tablets */
+@media (max-width: 768px) {
+  /* Compact Header & Navigation */
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  nav {
+    margin-right: 0;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  /* Compact Home Section */
+  .home {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 15px;
+    gap: 20px;
+    min-height: auto;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .content h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .content h2 {
+    font-size: 32px;
+    margin-bottom: 8px;
+  }
+
+  .content h3 {
+    font-size: 18px;
+    margin-bottom: 20px; /* Reduced from 40px to save space */
+  }
+
+  .action-group {
+    flex-direction: row; /* Aligns social icons and download button side-by-side */
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  /* Compact social icons */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .social-icons a {
+    font-size: 16px;
+    padding: 8px;
+    margin-right: 0;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 10px 20px;
+    margin-top: 0;
+  }
+
+  /* Compact, well-proportioned image container */
+  .image-container {
+    width: 180px;
+    margin-right: 0;
+    margin-top: 15px;
+    border-radius: 25px;
+    padding: 5px;
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
+  }
+
+  .image-container img {
+    border-radius: 21px;
+  }
 }
